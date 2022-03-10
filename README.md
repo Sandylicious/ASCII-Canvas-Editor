@@ -15,14 +15,31 @@ Ce programme permet d'initialiser et d'afficher un canevas ASCII sur un terminal
 * ```6``` représente un pixel de couleur *cyan*
 * ```7``` représente un pixel de couleur *blanc*
 
+**Options supportée**
+* ```-n```: Créer un canevas 
+* ```-s```: Afficher le canevas
+* ```-h```: Tracer une ligne horizontale dans le canevas
+* ```-v```: Tracer une ligne verticale dans le canevas
+* ```-r```: Tracer un rectangle dans le canevas
+* ```-l```: Tracer un segment dans le canevas
+* ```-c```: Tracer un cercle dans le canevas
+* ```-p```: Sélectionner un crayon
+* ```-k```: Colorer le canevas
+
+**Codes de retour dans les différents cas**
+* ```0```: Le programme fonctionne correctement
+* ```1```: Détection d'un caractère invalide dans le canevas
+* ```2```: La hauteur du canevas dépasse la limite (40)
+* ```3```: La largeur du canevas dépasse la limite (80)
+* ```4```: Le canevas n'est pas rectangulaire
+* ```5```: Détection d'une option invalide
+* ```6```: Manque de paramètres pour l'option
+* ```7```: Valeur invalide
+
 
 Un canevas est représenté par un fichier texte contenant `h` lignes de même
 longueur `w`. Les seuls caractères acceptés sont les suivants:
 
-- `.` désigne un pixel non occupé
-- `0`, `1`, ..., `7` désignent respectivement un pixel de couleur *noire*,
-  *rouge*, *vert*, *jaune*, *bleu*, *magenta*, *cyan*, *blanc* (voir les [codes
-  de couleur ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit))
 
 Un exemple de canevas valide avec `h = 5`, `w = 8` et utilisant les 7 couleurs
 est:
@@ -523,26 +540,6 @@ $ tar -xf nom_de_archive
 $ ./canvascii -option arguments
 ```
 
-**Options supportée**
-* ```-n```: Créer un canevas 
-* ```-s```: Afficher le canevas
-* ```-h```: Tracer une ligne horizontale dans le canevas
-* ```-v```: Tracer une ligne verticale dans le canevas
-* ```-r```: Tracer un rectangle dans le canevas
-* ```-l```: Tracer un segment dans le canevas
-* ```-c```: Tracer un cercle dans le canevas
-* ```-p```: Sélectionner un crayon
-* ```-k```: Colorer le canevas
-
-**Codes de retour dans les différents cas**
-* ```0```: Le programme fonctionne correctement
-* ```1```: Détection d'un caractère invalide dans le canevas
-* ```2```: La hauteur du canevas dépasse la limite (40)
-* ```3```: La largeur du canevas dépasse la limite (80)
-* ```4```: Le canevas n'est pas rectangulaire
-* ```5```: Détection d'une option invalide
-* ```6```: Manque de paramètres pour l'option
-* ```7```: Valeur invalide
 
 ## Dépendances
 
