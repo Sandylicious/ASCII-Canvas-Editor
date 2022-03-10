@@ -492,11 +492,6 @@ $ echo $?
 7
 ```
 
-
-## Auteur
-
-Fang, Xin Ran
-
 ## Fonctionnement
 
 **Guide d'utilisation**
@@ -539,6 +534,11 @@ $ tar -xf nom_de_archive
 ```
 $ ./canvascii -option arguments
 ```
+
+
+## Auteur
+
+Fang, Xin Ran
 
 
 ## Dépendances
