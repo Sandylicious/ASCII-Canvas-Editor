@@ -17,7 +17,7 @@ Ce programme permet d'initialiser et d'afficher un canevas ASCII sur un terminal
 
 ## Auteur
 
-Xin Ran Fang
+Fang, Xin Ran
 
 ## Fonctionnement
 
